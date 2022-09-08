@@ -1,2 +1,5 @@
-# ecommerceApp
-Challenge ONE - Oracle + Alura LATAM
+# EcommerceApp
+
+## Challenge ONE - Front End - Ecommerce
+
+### Deployed:
