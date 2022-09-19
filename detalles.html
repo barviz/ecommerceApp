@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icono.png">
+    <title>DC Geek | Detalle Producto</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/producto-detalle.css" rel="stylesheet">
+    <link href="./css/productos.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+
+        <section id="menu">
+
+            <nav class="menu__nav container">
+
+                <a href="./index.html" class="menu__logo-box"><img src="./img/header/logo.png" alt="logo dc geek"
+                        class="menu__logo-img">DC Geek</a>
+
+                <div class="menu__buscador-box"><input type="search" class="menu__buscador-input"
+                        placeholder="Buscar en DC Geek"><img src="./img/header/favicon-32x32.png"
+                        class="menu__buscador-icon"></input></div>
+
+                <div class="menu__login-box"><a class="menu__login-boton" href="./login.html">Atrás<i
+                            class="menu__login-icono fa-solid fa-arrow-left"></i></a></div>
+
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <section id="producto__detalle">
+
+            <div class="producto__detalle-container">
+
+                <div class="producto-detalle-img">
+                    <img class="producto__det-img" src="./img/productos/merch/1.jpg" alt="Producto">
+                </div>
+                <div class="producto__detalle-detalles">
+                    <p class="producto__detalle-categoria">Réplicas</p>
+                    <h4 class="producto__detalle-nombre">Producto</h4>
+                    <p class="producto__detalle-precio">$ 0</p>
+                    <p class="producto__detalle-detalle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure
+                        accusamus quae, sapiente iste voluptates blanditiis ex deserunt dolores velit reiciendis
+                        aliquid ipsum eligendi deleniti quam natus dignissimos nihil voluptatem possimus! </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer__login-fondo">
+
+        <div class="footer__container container">
+
+            <div class="footer__container-logoname">
+                <img class="footer__logo-img" src="./img/header/logo.png" alt="DC Geek">
+                <h5 style="color: white;">DC Geek</h5>
+            </div>
+
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">Quiénes somos</a></li>
+                <li class="footer__list-item"><a href="#">Política de privacidad</a></li>
+                <li class="footer__list-item"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer__list-item"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer__list-item"><a href="#">Franquicia</a></li>
+                <li class="footer__list-item"><a href="#">Anuncie aquí</a></li>
+            </ul>
+
+            <div class="footer__form-box">
+
+                <h3 class="footer__form-titulo">Hable con nosotros</h3>
+
+                <form class="footer__form" action="">
+
+                    <label class="footer__form-label" for="name">
+                        <p class="footer__form-field">Nombre:</p>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name"
+                            autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Ingrese un nombre.</span>
+                    </label>
+
+                    <label class="footer__form-label" for="message">
+                        <p class="footer__form-field">Mensaje:</p>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5"
+                            autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Ingrese un mensaje.</span>
+                    </label>
+
+                    <div class="submit">
+                        <button class="footer__form-submit" id="button-violeta" type="submit"
+                            id="submit">Enviar</button>
+                        <div class="ease"></div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer__desarrollador">
+            <p>©2022 Bárbara Vizgarra | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/buscador.js"></script>
+    <script src="./controller/detalles-producto.js" type="module"></script>
+
+</html>

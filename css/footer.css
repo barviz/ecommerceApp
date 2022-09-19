@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Days+One&display=swap');
+
+footer {
+    background: rgb(14, 18, 30);
+}
+
+.footer__container {
+    display: flex;
+    flex-flow: column nowrap;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.footer__logo-img {
+    height: 3rem;
+    filter: invert();
+}
+
+.footer__list {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2rem;
+    text-align: center;
+}
+
+.footer__list a{
+    color: #6544b3;
+}
+
+.footer__form-titulo {
+    text-align: center;
+    color: aliceblue;
+    margin-bottom: 1rem;
+}
+
+.footer__form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.footer__form-box {
+    width: 80%;
+    color: aliceblue;
+}
+
+.footer__form-label {
+    margin-bottom: 1rem;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: .8rem;
+    color: #808080;
+}
+
+.footer__form-input {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    resize: none;
+    width: 100%;
+}
+
+.footer__form-submit {
+    padding: 0.5rem 0.8rem;
+    background-color: cadetblue;
+    color: white;
+    border-radius: 0.2rem;
+    border: none;
+    outline: none;
+}
+
+.input-message-error {
+    display: none;
+    font-size: .7rem;
+}
+
+.invalid_input{
+    color: red;
+}
+
+.invalid_input .input-message-error{
+    display: block;
+}
+
+.footer__desarrollador {
+    display: flex;
+    justify-content: center;
+    font-family: 'Days One', sans-serif;
+    padding: 1rem 0;
+    font-size: .8rem;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.753);
+}
+
+#button-violeta {
+    float: left;
+    width: 100%;
+    border: #6544b3 solid 1px;
+    cursor: pointer;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -1px;
+    font-weight: 700;
+}
+
+#button-violeta:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+}
+
+.submit:hover {
+    color: #6544b3;
+}
+
+.ease {
+    width: 0px;
+    height: 45px;
+    background-color: #6544b3;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: #6544b3;
+}
+
+@media only screen and (min-width: 992px) {
+
+    .footer__container {
+        flex-flow: row nowrap;
+        justify-content: space-evenly;
+        align-items: flex-start;
+    }
+
+    .footer__container-logoname {
+        margin: 2rem;
+        text-align: center;
+    }
+
+    .footer__list li{
+        padding: .22rem;
+    }
+
+    .footer__form-box {
+        width: 50%;
+    }
+}

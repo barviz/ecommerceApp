@@ -1,0 +1,144 @@
+body {
+    background: linear-gradient(135deg, rgb(24, 25, 34) 2%, rgb(11, 12, 19) 58%, rgb(36, 63, 113) 100%);
+}
+
+main {
+    height: 120vh;
+}
+
+.producto-detalles {
+    display: block;
+}
+
+.producto-detalle-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.producto-detalle-img:hover {
+    filter: saturate(120%);
+}
+
+.producto__detalle-container {
+    background: transparent;
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    width: 70%;
+    margin-top: 5rem;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    color: #fff;
+    border-radius: 10px;
+}
+
+.producto-detalle-img img {
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.producto__detalle-detalles {
+    padding: 20px;
+    text-align: left;
+
+}
+
+.producto__detalle-nombre {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.producto__detalle-precio {
+    font-size: 1.5rem;
+    margin: 7.5px 0 20px 0;
+    color: #fff;
+}
+
+.producto__detalle-detalle {
+    margin-top: 5px;
+    font-size: 0.9rem;
+    line-height: 1.1rem;
+    color: rgba(255, 255, 255, 0.822);
+}
+
+@media only screen and (min-width: 550px) {
+
+   
+    .producto__detalle-container {
+        margin-top: 4rem;
+        width: 50%;
+    }
+
+    .producto-detalles img {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .producto__detalle-container {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .producto-detalle-img {
+        width: 40%;
+        justify-content: space-evenly;
+    }
+
+    .producto-detalle-img img{
+        width: 100%;
+    }
+
+    .producto__detalle-detalles {
+        width: 50%;
+        padding: 2rem;
+        align-items: flex-start;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .producto__detalle-container {
+        
+        justify-content: center;
+        width: 90%;
+        margin-top: 3rem;
+    }
+
+    .producto-detalle-img {
+        width: 40%;
+
+    }
+
+    .producto__detalle-detalles {
+        width: 50%;
+    }
+
+    .producto-detalle-img img{
+        width: 80%;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+    .producto__detalle-container {
+        margin-top: 1rem;
+    }
+
+    .producto-detalle-img img{
+        width: 60%;
+    }
+
+    .producto__detalle-detalles {
+        padding: 1rem;
+    }
+}

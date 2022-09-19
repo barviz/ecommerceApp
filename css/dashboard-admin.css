@@ -1,0 +1,63 @@
+body {
+    background: linear-gradient(135deg, rgb(24, 25, 34) 2%, rgb(11, 12, 19) 58%, rgb(36, 63, 113) 100%);
+}
+
+.header__height {
+    height: 10vh;
+}
+
+.admin__titulo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    letter-spacing: .1rem;
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 8rem;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.producto__acciones-box {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: .75rem;
+    margin-top: .5rem;
+}
+
+.producto__accion-editar {
+    width: 100%;
+    padding: .5rem 0;
+    background-color: transparent;
+    color: #8803f4;
+    border-radius: .2rem;
+    outline: none;
+    font-size: 1rem;
+    transition: .2s;
+    text-align: center;
+}
+
+.producto__accion-editar:hover{
+    background-color: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.producto__accion-eliminar {
+    width: 100%;
+    padding: .5rem 0;
+    background-color: transparent;
+    color: #8803f4;
+    border-radius: .2rem;
+    outline: none;
+    font-size: 1rem;
+    transition: .2s;
+    text-align: center;
+    border: none;
+}
+
+.producto__accion-eliminar:hover{
+    background-color: red;
+    color: yellow;
+    cursor: pointer;
+}

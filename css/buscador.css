@@ -1,0 +1,43 @@
+body {
+    background: linear-gradient(135deg, rgb(24, 25, 34) 2%, rgb(11, 12, 19) 58%, rgb(36, 63, 113) 100%);
+}
+
+.header__height {
+    height: 15vh;
+}
+
+.admin__titulo {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 8rem;
+    color: #fff;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+.sin-coincidencia {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header__height {
+        height: 10.5vh;
+    }
+}
+/*
+@media only screen and (min-width: 992px) {
+    
+    .header__height {
+        height: 10vh;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    
+    .header__height {
+        height: 10.5vh;
+    }
+}*/

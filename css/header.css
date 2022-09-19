@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Reem+Kufi+Ink&family=Vollkorn:wght@700&display=swap');
+
+html {
+    overflow-x: hidden;
+}
+
+.container {
+    width: 90%;
+    max-width: 1255px;
+    margin: auto;
+}
+
+#menu {
+    background-color: transparent;
+    position: absolute;
+    z-index: 9999;
+    width: 100%;
+}
+
+.menu__nav {
+    display: grid;
+    font-family: 'Reem Kufi Ink', sans-serif;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: .5rem 1rem;
+    height: auto;
+    gap: .6rem;
+}
+
+.menu__logo-box {
+    grid-column: 1;
+    grid-row: 1;
+    color: #ffffff;
+    flex-flow: row nowrap;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu__logo-box:hover {
+    color: #ffffff;
+}
+
+.menu__logo-img {
+    width: 4rem;
+    filter: invert();
+}
+
+.menu__buscador-box {
+    grid-column: 1/3;
+    grid-row: 2;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+}
+
+.menu__buscador-input {
+    color: white;
+    width: 275px;
+    height: 25px;
+    background: transparent;
+    outline: none;
+}
+
+.menu__buscador-icon {
+    width: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.menu__login-box {
+    grid-column: 2;
+    grid-row: 1;
+    cursor: pointer;
+    justify-self: end;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu__login-boton {
+    color: white;
+    border: solid 1.8px transparent;
+    padding: .5rem 1rem;
+}
+
+.menu__login-icono {
+    margin-left: .2rem;
+}
+
+.menu__login-boton:hover {
+    border: solid 1.8px rgb(136, 135, 135);
+    color: #ffffff;
+}
+
+.banner__logo-img {
+    height: 2.5rem;
+}
+
+.font__pers-titulo {
+    font-family: 'Vollkorn', serif;
+}
+
+.font__pers-subtitulo {
+    font-family: 'Marcellus', serif;
+    letter-spacing: .1rem;
+}
+
+.sombra {
+    text-shadow: 2px 1px #000000;
+}
+
+@media only screen and (min-width: 768px) {
+    
+    .menu__nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 4rem;
+    }
+
+    .menu__logo-img {
+        width: 5rem;
+        padding: .5rem;
+        padding-left: 0px;
+    }
+
+    .menu__buscador-box {
+        justify-content: center;
+    }
+
+    .menu__buscador-input {
+        color: white;
+        width: 400px;
+        height: 35px;
+        background: transparent;
+    }
+
+    .menu__buscador-icon {
+        width: 25px;
+        padding-left: 0.5rem;
+        cursor: pointer;
+    }
+
+    .menu__login-boton:hover {
+        border: solid 1.8px rgb(136, 135, 135);
+    }
+
+}

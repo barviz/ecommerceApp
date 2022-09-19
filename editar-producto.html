@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icono.png">
+    <title>DC Geek | Editar Producto</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/header.css" rel="stylesheet">
+    <link href="./css/editar-producto.css" rel="stylesheet">
+    <link href="./css/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="header__height">
+
+        <section id="menu">
+
+            <nav class="menu__nav container">
+
+                <a href="./index.html" class="menu__logo-box"><img src="./img/header/logo.png" alt="logo dc geek"
+                        class="menu__logo-img">DC Geek</a>
+
+                <div class="menu__buscador-box"><input type="search" class="menu__buscador-input"
+                        placeholder="Buscar en DC Geek"><img src="./img/header/favicon-32x32.png"
+                        class="menu__buscador-icon"></input></div>
+
+                <div class="menu__login-box"><a class="menu__login-boton" href="./dashboard-admin.html">Menú
+                        Admin<i class="menu__login-icono fa-solid fa-arrow-left"></i></a></div>
+
+            </nav>
+
+        </section>
+
+    </header>
+
+    <main>
+
+        <div class="edicion container">
+
+            <h1 class="edicion__titulo">Editar Producto</h1>
+
+            <form class="edit__producto-form">
+
+                <input class="edit__form-input" type="text" name="edit-nombre" id="edit-nombre" placeholder="Nombre" required="required" />
+                <span class="input-message-error">Este campo no es válido</span>
+                <input class="edit__form-input" type="text" name="edit-categoria" id="edit-categoria" placeholder="Categoría" required="required" />
+                <span class="input-message-error">Este campo no es válido</span>
+                <input class="edit__form-input" type="url" name="edit-url" id="edit-url" placeholder="URL de imagen" required="required" />
+                <span class="input-message-error">Este campo no es válido</span>
+                <input class="edit__form-input" type="number" name="edit-precio" id="edit-precio" placeholder="Precio" required="required" />
+                <span class="input-message-error">Este campo no es válido</span>
+                <textarea class="add-product__form-input form-input estilos-txtarea" type="text" id="description"
+                    name="edit-descripcion" id="edit-descripcion" rows="3" cols="32" autocomplete="off" placeholder="Descripción" required></textarea>
+                    <span class="input-message-error">Este campo no es válido</span>
+                <div class="submit">
+                    <button type="submit" id="button-violeta">Guardar</button>
+                    <div class="ease"></div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="footer__container container">
+
+            <div class="footer__container-logoname">
+                <img class="footer__logo-img" src="./img/header/logo.png" alt="DC Geek">
+                <h5 style="color: white;">DC Geek</h5>
+            </div>
+
+            <ul class="footer__list">
+                <li class="footer__list-item"><a href="#">Quiénes somos</a></li>
+                <li class="footer__list-item"><a href="#">Política de privacidad</a></li>
+                <li class="footer__list-item"><a href="#">Programa de fidelidad</a></li>
+                <li class="footer__list-item"><a href="#">Nuestras tiendas</a></li>
+                <li class="footer__list-item"><a href="#">Franquicia</a></li>
+                <li class="footer__list-item"><a href="#">Anuncie aquí</a></li>
+            </ul>
+
+            <div class="footer__form-box">
+
+                <h3 class="footer__form-titulo">Hable con nosotros</h3>
+
+                <form class="footer__form" action="">
+
+                    <label class="footer__form-label" for="name">
+                        <p class="footer__form-field">Nombre:</p>
+                        <input class="footer__form-input form-input" type="text" id="name" name="name"
+                            autocomplete="off" required maxlength="40">
+                        <span class="input-message-error">Ingrese un nombre.</span>
+                    </label>
+
+                    <label class="footer__form-label" for="message">
+                        <p class="footer__form-field">Mensaje:</p>
+                        <textarea class="footer__form-input form-input" type="text" id="message" name="message" rows="5"
+                            autocomplete="off" required maxlength="120"></textarea>
+                        <span class="input-message-error">Ingrese un mensaje.</span>
+                    </label>
+
+                    <div class="submit">
+                        <button class="footer__form-submit" id="button-violeta" type="submit" id="submit">Enviar</button>
+                        <div class="ease"></div>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <div class="footer__desarrollador">
+            <p>©2022 Bárbara Vizgarra | All Rights Reserved</p>
+        </div>
+
+    </footer>
+
+    <script src="https://kit.fontawesome.com/f570856479.js" crossorigin="anonymous"></script>
+    <script src="./controller/editar-producto.js" type="module"></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/buscador.js"></script>
+
+</body>
+
+</html>
